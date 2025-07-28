@@ -36,6 +36,14 @@ public :
         salary = sal;
     }
 
+    // Copy Constructor : Custom Copy Constructor 
+    teacher(teacher &OriginalObject){  // Pass By Reference 
+        cout<<"I am a custom copy constructor : "<<endl;
+        this->name = OriginalObject.name;
+        this->dept = OriginalObject.dept;
+        this->subject = OriginalObject.subject;
+        this->salary = OriginalObject.salary;
+    }  
     // Member Function : 
     void getInfo(){
         cout<<"Name : "<<name<<endl;
@@ -52,7 +60,6 @@ int main(){
     cout<<t2.dept<<endl;
 
     t2.getInfo();
-
-
+    
     return 0;
 }
