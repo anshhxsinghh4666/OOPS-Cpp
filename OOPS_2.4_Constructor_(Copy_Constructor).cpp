@@ -13,12 +13,13 @@ NOTE : Constructors are always Public because it is called from the main functio
 */ 
 
 
+// COPY CONSTRUCTOR : Special Constructor (default) used to cpy properties of one object into another 
 
 #include <iostream>
 #include <string>
 using namespace std;
 
-// COPY CONSTRUCTOR : Special Constructor (default) used to cpy properties of one object into another 
+// DEFAULT COPY CONSTRUCTOR : 
 
 class teacher{
 public :
