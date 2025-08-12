@@ -12,7 +12,7 @@ Check Notes for more.
 #include <string>
 using namespace std;
 
-class Student{
+class Student{ 
 public : 
     string name;
     double cgpa;

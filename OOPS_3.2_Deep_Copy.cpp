@@ -44,7 +44,7 @@ int main(){
     s1.getInfo();
 
     s2.name = "Rahul";
-    s2.getInfo(); // So the change in cgpa of s2 will also change the value of cgpa in s1.
+    s2.getInfo(); 
 
     return 0;
 }
