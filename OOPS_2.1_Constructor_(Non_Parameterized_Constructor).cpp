@@ -1,6 +1,7 @@
 /*
 CONSTRUCTOR : Special method invoked automatically at time of object creation if not 
                 created seperately. Used for initialistion
+                Allocates memory to the object.
                 
     Properties : 
     -> Same name as class 
