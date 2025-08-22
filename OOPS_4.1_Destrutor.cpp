@@ -9,7 +9,7 @@
 using namespace std;
 
 class Student {
-   public:
+public:
     string name;
     double* cgpaPtr;
 
@@ -21,13 +21,13 @@ class Student {
 
     // Destructor :
     ~Student() {
-        cout << "Hi , I delete everything";
+        cout << "Hi , I delete  everything";
         // NOTE : Destructor automatically frees statistically allocated memory.
         // Dynamically allocated memory have to be seperately freed.
         delete cgpaPtr;
     }
 
-    /*NOTE : When the code completed memeory is deleted but it is important to seperately delete the dynamically allocated memory
+    /* NOTE : When the code is completed/executed memory is deleted but it is important to seperately delete the dynamically allocated memory
             otherwise it will lead to memory leaks
 
             Memory Leak : When we don't free the dynamically allocated memory using delete then the data is stored in the heap 
@@ -45,3 +45,4 @@ int main() {
     s1.getInfo();
     return 0;
 }
+
