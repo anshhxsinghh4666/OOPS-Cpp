@@ -8,18 +8,6 @@
                CHILD
 */
 
-// Multi-Level Inheritance :
-
-/*
-        PARENT 
-           |
-           v
-        PARENT
-           |
-           v
-         CHILD
-*/
-
 #include <iostream>
 #include <string>
 using namespace std;
