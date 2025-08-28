@@ -1,40 +1,43 @@
 // INHERITANCE : When properties and member functions of base class are passed on to the derived class
 //      Used to increase code reusability
 
+/*
+        PARENT 
+           |
+           v
+         CHILD
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;
 
 // Parent Class :
 class Person {
-public:
+   public:
     string name;
     int age;
 
     // Non Parameterized Constructor :
-    Person() { 
-        cout << "Parent Class Constructor" << endl; 
-    }
+    Person() { cout << "Parent Class Constructor" << endl; }
+
+    ~Person() { cout << "Parent Class Destructor" << endl; }
 };
 
 // Child Class (Inheritant) :
 class Student : public Person {
-public:
+   public:
     long rollNo;
 
-    Student() { 
-        cout<< "Child Class Constructor" << endl; 
-    }
+    Student() { cout << "Child Class Constructor" << endl; }
 
     void getInfo() {
         cout << "Name : " << name << endl;
-        cout <<"Age : " << age << endl;
+        cout << "Age : " << age << endl;
         cout << "Roll No. : " << rollNo << endl;
     }
 
-    ~Student() { 
-        cout << "Child Class Destructor" << endl; 
-    }
+    ~Student() { cout << "Child Class Destructor" << endl; }
 
     // NOTE : No need to declare name and age inside student class as it will be inheritated from person class
 };
@@ -52,3 +55,6 @@ int main() {
 
     return 0;
 }
+
+
+// NOTE : Private members inside Parent Class don't get inheritated.
