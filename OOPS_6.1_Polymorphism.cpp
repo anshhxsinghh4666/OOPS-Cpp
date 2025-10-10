@@ -9,7 +9,7 @@ class Student {
    public:
     string name;
 
-    // COnstructor Overloading : 
+    // Constructor Overloading :
     Student() { cout << "Non Parameterized Constructor \n"; }
 
     Student(string name) {
@@ -19,10 +19,10 @@ class Student {
 };
 
 int main() {
-    Student s1("Ansh Singh"); // -> Call Parameterized Constructor
+    Student s1("Ansh Singh");  // -> Call Parameterized Constructor
 
     Student s2;
-    s2.name = "Ansh Singh";  // -> Call Non Parameterized Constructor 
+    s2.name = "Ansh Singh";  // -> Call Non Parameterized Constructor
 
     // This is called Constructor Overloading. It is an example of Compile time Polymorphism. This shows how object accordingly decides which constructor to call.
 
