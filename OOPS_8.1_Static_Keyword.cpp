@@ -2,7 +2,7 @@
 STATIC KEYWORD :
 
 1. Static Variables : 
-        Variables declared as static in a finction are created and 
+        Variables declared as static in a function are created and 
         initialised once for the lifetime of the program.  -> In Function
         
         Static Variables in a class are created and initialised once. They are shared by
