@@ -8,7 +8,6 @@
          CHILD
 */
 
-
 #include <iostream>
 #include <string>
 using namespace std;
@@ -36,6 +35,7 @@ class Student : public Person {
 
     Student(string name, int age, long rollNo) : Person(name, age) {  // To call paremterized constructor
         cout << "Child Class Constructor" << endl;
+        this->rollNo = rollNo;
     }
 
     void getInfo() {
